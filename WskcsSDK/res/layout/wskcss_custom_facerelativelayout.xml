@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.visionet.wskcss.view.FaceRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FaceRelativeLayout"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content" >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/wskcs_gray"/>
+    <LinearLayout
+        android:id="@+id/rl_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@android:color/white" >
+
+
+        <Button
+            android:id="@+id/bt_record_input"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:background="@drawable/wskcss_cb_input_record"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="38dp"
+            android:layout_weight="1"
+            android:background="@drawable/wskcss_shape_corner_all_white_frame"
+            android:maxLines="2"
+            android:gravity="center_vertical"
+            android:textSize="16dp"
+            android:padding="6dip" >
+            <requestFocus />
+        </EditText>
+         <com.visionet.wskcss.view.RecordButton
+            android:id="@+id/rb_record"
+            android:layout_width="wrap_content"
+			android:layout_weight="1"
+            android:layout_height="38dp"
+            android:background="@drawable/wskcss_btn_recoder"
+            android:visibility="gone"
+            android:text="@string/wskcss_touch_to_record"
+            android:padding="6dip" />
+        <Button
+            android:id="@+id/bt_face"
+            android:button="@null"
+            android:layout_marginLeft="5dp"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:background="@drawable/wskcss_cb_chat_face"
+            />
+        <Button
+            android:id="@+id/bt_more"
+            android:layout_marginLeft="5dp"
+            android:layout_width="45dip"
+            android:layout_height="45dip"
+            android:button="@null"
+            android:background="@drawable/wskcss_selector_chat_up_bt"
+            />
+
+         <Button
+            android:id="@+id/chat_send_btn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:textColor="#00f"
+            android:background="@null"
+            android:text="@string/wskcss_send" />
+    </LinearLayout>
+	<LinearLayout
+	    android:id="@+id/ll_more"
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:layout_below="@id/rl_input"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:background="#f6f5f5">
+        <ImageView android:id="@+id/iv_camera"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:visibility="gone"
+            android:src="@mipmap/wskcss_chat_camera"/>
+        <ImageView android:id="@+id/iv_pic"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/wskcss_chat_pic"/>
+	</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/ll_face"
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:layout_below="@id/rl_input"
+        android:background="#f6f5f5"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_face"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="6dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.visionet.wskcss.view.FaceRelativeLayout>
