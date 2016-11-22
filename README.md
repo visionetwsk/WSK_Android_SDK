@@ -1,9 +1,4 @@
-# WSK_Android_SDK_forEclipse
-微尚客客服eclipse SDK集成
-
-WskSDKTest：SDK测试demo
-
-WskSDK：SDK依赖库
+# 微尚客 Android SDK
 
 ##简介
 
@@ -21,7 +16,7 @@ compile 'com.visionet.wskcss:wskcss:1.0.2'
 
 ####Eclipse: 
 
->先下载 SDK，然后解压缩，将得到的 WskSDK 文件夹作为库工程模块导入到你的工程中，并添加模块依赖。然后将 AndroidManifest 文件中的内容拷贝到你的主工程的 manifest 文件中，将 assets 文件夹的内容拷贝你的主工程的 assets 目录中。
+>先下载 WSK_Android_SDK_forEclipse，然后解压缩，将得到的 WskSDK 文件夹作为库工程模块导入到你的工程中，并添加模块依赖。然后将 AndroidManifest 文件中的内容拷贝到你的主工程的 manifest 文件中，将 assets 文件夹的内容拷贝你的主工程的 assets 目录中。
 
 ###2.WskCs.init();
 >微尚客SDK初始化
