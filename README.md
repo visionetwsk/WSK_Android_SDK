@@ -9,7 +9,7 @@
 
 ####Android Studio: 
 
->在工程 build.gradle 文件中添加依赖即可。
+>在工程 build.gradle 文件中添加依赖即可。<a href='https://bintray.com/wsk/wskcs/wsk_sdk?source=watch' alt='Get automatic notifications about new "wsk_sdk" versions'><img src='https://www.bintray.com/docs/images/bintray_badge_color.png'></a>
 ```gradle
 compile 'com.visionet.wskcss:wskcss:1.0.2'
 ```
