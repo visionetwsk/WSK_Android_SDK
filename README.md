@@ -9,13 +9,13 @@
 
 ####Android Studio: 
 
->在工程 build.gradle 文件中添加依赖即可。
-<a href='https://bintray.com/wsk/wskcs/wsk_sdk/_latestVersion'><img src='https://api.bintray.com/packages/wsk/wskcs/wsk_sdk/images/download.svg'></a>
+> 在工程 build.gradle 文件中添加依赖：
 
-> 请将1.0.2替换徽章后面的版本号
 ```gradle
 compile 'com.visionet.wskcss:wskcss:1.0.2'
 ```
+
+> 请将1.0.2替换为此徽章后面的版本号<a href='https://bintray.com/wsk/wskcs/wsk_sdk/_latestVersion'><img src='https://api.bintray.com/packages/wsk/wskcs/wsk_sdk/images/download.svg'></a>
 
 
 ####Eclipse: 
