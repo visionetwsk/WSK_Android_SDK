@@ -34,7 +34,7 @@ compile 'com.visionet.wskcss:wskcss:1.0.2'
 * userId为你的业务系统中的的唯一标示，可以用id，账号等，用来保证不同手机客户端的与客服交流的数据同步
 * appKey用来区分微尚客集成客户端，在微尚客平台的 **App SDK设置** 中可以找到
 
-###2.WskCs.configUi();
+###3.WskCs.configUi();
 >微尚客SDK的UI配置，如不需要可以不调用
 
 ####在初始化后调用：
