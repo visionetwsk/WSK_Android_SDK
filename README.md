@@ -32,10 +32,11 @@ compile 'com.visionet.wskcss:wskcss:1.0.2'
 ```
 ####b.在你的业务系统登录后调用：
 ```java
-  WskCs.init(context,userId,appKey);
+  WskCs.init(context,userId,nickName,appKey);
 ```
 
 * userId为你的业务系统中的的唯一标示，可以用id，账号等，用来保证不同手机客户端的与客服交流的数据同步
+* nickName为你的业务平台系统中的用户名，用来在客服平台展示访客的名称
 * appKey用来区分微尚客集成客户端，在微尚客平台的 **App SDK设置** 中可以找到
 
 ###3.WskCs.configUi();
