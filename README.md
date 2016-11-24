@@ -135,7 +135,7 @@ public class WskCsConfig {
     private boolean showTitleLine;
  }
 ```
-### extends WskCSPushBR
+### registerReceiver WskCSPushBR
 > 继承接收微尚客客服消息推送的广播
 ```java
 public class MyWskCSPushBR extends WskCSPushBR{
