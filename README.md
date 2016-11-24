@@ -84,6 +84,7 @@ public class WskCsConfig {
      * 聊天窗口背景颜色
      */
     private Integer backgroundColor ;
+    
     /**
      * 展示时间颜色color；
      */
@@ -134,3 +135,45 @@ public class WskCsConfig {
     private boolean showTitleLine;
  }
 ```
+### extends WskCSPushBR
+> 继承接收微尚客客服消息推送的广播
+```java
+public class MyWskCSPushBR extends WskCSPushBR{
+  /**
+   * 接收到消息
+   * @param push
+   */
+  @Override
+  public void onReceiverPush(ReceivePush push) {
+    //此处可以用来弹出通知Notification，显示未读消息数量等操作
+  }
+  /**
+   * 收到离线消息集合
+   * param pushs
+   */
+  @Override
+  public void onReceiverOffLinePushs(List<ReceivePush> pushs) {
+    //此处可以用来弹出通知Notification，显示未读消息数量等操作
+  }
+}
+```
+ 
+#### a.可以通过代码注册
+
+```java
+IntentFilter filter = new IntentFilter( WskCSPushBR.ACTION_PUSH );
+filter.setPriority( 990 );//此处小于1000,当处于联系客服界面时候将不会收到广播
+registerReceiver(wskCSPushBR,filter);
+```
+ 
+#### b.AndroidManifest进行注册
+
+```xml
+<receiver android:name=".MyWskCSPushBR" >
+  <intent-filter android:priority="990"><!--此处小于1000,当处于联系客服界面时候将不会收到广播-->
+    <action android:name="com.visionet.wskcss.ACTION_MESSAGE_PUSH"></action>
+  </intent-filter>
+</receiver>
+         
+ 
+ 
