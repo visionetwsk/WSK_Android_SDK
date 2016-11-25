@@ -135,7 +135,7 @@ public class WskCsConfig {
     private boolean showTitleLine;
  }
 ```
-### registerReceiver WskCSPushBR
+### 4.registerReceiver WskCSPushBR
 > 继承接收微尚客客服消息推送的广播
 ```java
 public class MyWskCSPushBR extends WskCSPushBR{
@@ -174,6 +174,22 @@ registerReceiver(wskCSPushBR,filter);
     <action android:name="com.visionet.wskcss.ACTION_MESSAGE_PUSH"></action>
   </intent-filter>
 </receiver>
-         
+
+```
+
+###5. WskCS.stopReceiverPushService();
+> 停止接收客服消息的推送服务，注意当进入联系客服界面将服务将自动开启
+
+```java
+
+    /**
+     * 停止接收推送服务，一般在业务系统退出登录后调用
+     * @param saveOffLinePush 停止后所有消息是否保存为离线消息，离线消息在重连后会发送
+     */
+     public static void stopReceiverPushService(boolean saveOffLinePush){
+        ...
+    }
+    
+```
  
  
