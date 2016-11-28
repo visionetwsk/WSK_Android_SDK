@@ -78,7 +78,7 @@
 	<LinearLayout
 	    android:id="@+id/ll_more"
         android:layout_width="fill_parent"
-        android:layout_height="150dip"
+        android:layout_height="wrap_content"
         android:layout_below="@id/rl_input"
         android:orientation="horizontal"
         android:padding="15dp"
@@ -98,7 +98,7 @@
     <RelativeLayout
         android:id="@+id/ll_face"
         android:layout_width="fill_parent"
-        android:layout_height="150dip"
+        android:layout_height="wrap_content"
         android:layout_below="@id/rl_input"
         android:background="#f6f5f5"
         android:visibility="gone" >
@@ -106,7 +106,7 @@
         <android.support.v4.view.ViewPager
             android:id="@+id/vp_face"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="wrap_content" >
         </android.support.v4.view.ViewPager>
 
         <LinearLayout

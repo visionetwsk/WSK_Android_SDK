@@ -28,8 +28,11 @@
         <activity android:name="com.visionet.wskcss.WebViewActivity" />
 
         <service
-            android:name="com.visionet.wskcss.WskCSService"
-            android:exported="false" />
+            android:name=".WskCSService"
+            android:exported="false"
+            android:process=":wskcs"
+            />
+
     </application>
 
 </manifest>

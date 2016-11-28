@@ -1,5 +1,6 @@
 package com.example.test;
 
+
 import com.visionet.wskcss.WskCS;
 
 import android.os.Bundle;
@@ -13,6 +14,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		WskCS.init( this,"dmlzaW9uZXQ6TW9iaWxlQ2hhdFRlc3Qx");
+
 		setContentView(R.layout.activity_main);
 	}
 
