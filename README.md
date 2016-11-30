@@ -25,7 +25,7 @@ compile 'com.visionet.wskcss:wskcss:1.0.2'
 ###2.WskCs.init();
 >微尚客SDK初始化
 
->根据需求可选：
+>根据需求可选(二选一)：
 ####a.在你的 Application 类的 onCreate 函数中调用：
 ```java
   WskCs.init(context,appKey);
