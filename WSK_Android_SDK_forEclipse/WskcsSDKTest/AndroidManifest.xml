@@ -33,7 +33,6 @@
             android:label="联系客服"
              />
 
-
         <service
             android:name="com.visionet.wskcss.WskCSService"
             android:exported="false" />
@@ -47,6 +46,8 @@
         <activity
             android:name="com.visionet.wskcss.WebViewActivity"
             />
+        
+        
     </application>
 
 </manifest>
