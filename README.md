@@ -25,7 +25,7 @@ compile 'com.visionet.wskcss:wskcss:1.0.2'
 ###2.WskCs.init();
 >微尚客SDK初始化
 
->根据需求可选(二选一)：
+>根据需求可选(三选一)：
 ####a.在你的 Application 类的 onCreate 函数中调用：
 ```java
   WskCs.init(context,appKey);
@@ -34,10 +34,77 @@ compile 'com.visionet.wskcss:wskcss:1.0.2'
 ```java
   WskCs.init(context,userId,nickName,appKey);
 ```
+####c.在你的业务系统登录后调用：
+```java
+  UserInfo userInfo = new UserInfo(userId);
+  WskCS.init( context,appkey,userInfo );
+  WskCs.init(context,appKey,userInfo);
+  
+  //可同步用户信息：
+  ublic class UserInfo {
+
+    /**
+     * 用户昵称对应nickName
+     */
+    private String customerName;
+
+    /**
+     * 性别(男：1；女：2)
+     */
+    private int gender;
+
+    /**
+     * 手机号码
+     */
+    private String phoneNumber;
+    /**
+     * 固定电话
+     */
+    private String telephone;
+
+    /**
+     * 邮箱
+     */
+    private String email;
+
+    /**
+     * 地址
+     */
+    private String address;
+
+    /**
+     * 职位
+     */
+    private String title;
+
+    /**
+     * 单位
+     */
+    private String department;
+
+    /**
+     * 头像
+     */
+    private String headimgurl;
+
+    /**
+     * 生日(yyyy-MM-dd)
+     */
+    private String birthday;
+
+    /**
+     * 备注
+     */
+    private String remark;
+    
+  }
+```
+
 
 * userId为你的业务系统中的的唯一标示，可以用id，账号等，用来保证不同手机客户端的与客服交流的数据同步
 * nickName为你的业务平台系统中的用户名，用来在客服平台展示访客的名称
 * appKey用来区分微尚客集成客户端，在微尚客平台的 **App SDK设置** 中可以找到
+* userInfo用户信息
 
 ###3.WskCs.configUi();
 >微尚客SDK的UI配置，如不需要可以不调用
