@@ -39,13 +39,14 @@ compile 'com.visionet.wskcss:wskcss:1.0.2'
   UserInfo userInfo = new UserInfo(userId);
   WskCS.init( context,appkey,userInfo );
   WskCs.init(context,appKey,userInfo);
-  
-  //可同步用户信息：
-  ublic class UserInfo {
+```
+#####可配置项：
 
-    /**
-     * 用户昵称对应nickName
-     */
+```java
+public class UserInfo {
+   /**
+    * 用户昵称对应nickName
+    */
     private String customerName;
 
     /**
@@ -116,8 +117,9 @@ compile 'com.visionet.wskcss:wskcss:1.0.2'
 ```
 ####可配置项：
 ```java
-/**
+
 public class WskCsConfig {
+    /**
      * 客户头像url优先
      */
     private String customerPhotoUrl;
