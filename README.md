@@ -246,7 +246,22 @@ registerReceiver(wskCSPushBR,filter);
 
 ```
 
-###5. WskCS.stopReceiverPushService();
+###5. WskCS.toWSKCS();
+> 跳转至客服界面(二选一)：
+```java
+    WskCS.toWSKCS( context);
+```
+
+```java
+    /**
+     * 自动发送一个链接
+     * @param link 链接地址（跳转的url）
+     * @param linkDesc 链接描述（展示的信息）
+     */
+    WskCS.toWSKCS( context,link,linkDesc);
+```
+
+###6. WskCS.stopReceiverPushService();
 > 停止接收客服消息的推送服务，注意当进入联系客服界面将服务将自动开启
 
 ```java
