@@ -35,6 +35,6 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	public void toWskcss(View view){
-		WskCS.toWSKCS(this);
+		WskCS.toWSKCS(this,"http://baidu.com","百度测试一下看看");
 	}
 }

@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.visionet.wskcss"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="23" />
+
+    <application android:allowBackup="true" >
+        <activity
+            android:name="com.visionet.wskcss.WskCSActivity"
+            android:label="联系客服" />
+        
+        <activity
+            android:name="com.visionet.wskcss.PhoneImage.MultiImageSelectorActivity"
+            android:label="选择图片" />
+        
+        <activity android:name="com.visionet.wskcss.ShowImageActivity" />
+        
+        <activity android:name="com.visionet.wskcss.WebViewActivity" />
+
+        <service
+            android:name=".WskCSService"
+            android:exported="false"
+            android:process=":wskcs"
+            />
+
+    </application>
+
+</manifest>
