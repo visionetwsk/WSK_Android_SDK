@@ -1,4 +1,4 @@
-# 微尚客 Android SDK
+# 微上客 Android SDK
 
 ##简介
 
