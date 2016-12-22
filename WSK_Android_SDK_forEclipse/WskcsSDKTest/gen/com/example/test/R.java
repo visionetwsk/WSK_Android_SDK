@@ -9,6 +9,7 @@ package com.example.test;
 
 public final class R {
     public static final class array {
+        public static final int wskcss_msg_copy=0x7f090001;
         public static final int wskcss_msg_send_failed_handles=0x7f090000;
     }
     public static final class attr {
@@ -492,34 +493,36 @@ containing a value of this type.
         public static final int wskcss_cs4=0x7f0300e9;
         public static final int wskcss_d1=0x7f0300ea;
         public static final int wskcss_d2=0x7f0300eb;
-        public static final int wskcss_icon_back_pressed=0x7f0300ec;
-        public static final int wskcss_icon_user_def=0x7f0300ed;
-        public static final int wskcss_icon_video=0x7f0300ee;
-        public static final int wskcss_icon_voice_left=0x7f0300ef;
-        public static final int wskcss_icon_voice_right=0x7f0300f0;
-        public static final int wskcss_img_record_cancel=0x7f0300f1;
-        public static final int wskcss_img_recording=0x7f0300f2;
-        public static final int wskcss_img_reload=0x7f0300f3;
-        public static final int wskcss_img_session_face=0x7f0300f4;
-        public static final int wskcss_img_session_keyboard=0x7f0300f5;
-        public static final int wskcss_record_volum1=0x7f0300f6;
-        public static final int wskcss_record_volum2=0x7f0300f7;
-        public static final int wskcss_record_volum3=0x7f0300f8;
-        public static final int wskcss_record_volum4=0x7f0300f9;
-        public static final int wskcss_record_volum5=0x7f0300fa;
-        public static final int wskcss_record_volum6=0x7f0300fb;
-        public static final int wskcss_record_volum7=0x7f0300fc;
-        public static final int wskcss_record_volum8=0x7f0300fd;
+        public static final int wskcss_icon_back_normal=0x7f0300ec;
+        public static final int wskcss_icon_back_pressed=0x7f0300ed;
+        public static final int wskcss_icon_user_def=0x7f0300ee;
+        public static final int wskcss_icon_video=0x7f0300ef;
+        public static final int wskcss_icon_voice_left=0x7f0300f0;
+        public static final int wskcss_icon_voice_right=0x7f0300f1;
+        public static final int wskcss_img_record_cancel=0x7f0300f2;
+        public static final int wskcss_img_recording=0x7f0300f3;
+        public static final int wskcss_img_reload=0x7f0300f4;
+        public static final int wskcss_img_session_face=0x7f0300f5;
+        public static final int wskcss_img_session_keyboard=0x7f0300f6;
+        public static final int wskcss_record_volum1=0x7f0300f7;
+        public static final int wskcss_record_volum2=0x7f0300f8;
+        public static final int wskcss_record_volum3=0x7f0300f9;
+        public static final int wskcss_record_volum4=0x7f0300fa;
+        public static final int wskcss_record_volum5=0x7f0300fb;
+        public static final int wskcss_record_volum6=0x7f0300fc;
+        public static final int wskcss_record_volum7=0x7f0300fd;
+        public static final int wskcss_record_volum8=0x7f0300fe;
     }
     public static final class string {
-        public static final int action_settings=0x7f08001a;
-        public static final int app_name=0x7f080019;
-        public static final int hello_world=0x7f08001b;
+        public static final int action_settings=0x7f08001b;
+        public static final int app_name=0x7f08001a;
+        public static final int hello_world=0x7f08001c;
         public static final int wskcss_action_done=0x7f08000f;
         public static final int wskcss_all_photos=0x7f080010;
         public static final int wskcss_app_name=0x7f080000;
         public static final int wskcss_cancel_record=0x7f080006;
         public static final int wskcss_contact_customer_service=0x7f080001;
+        public static final int wskcss_copy=0x7f080019;
         public static final int wskcss_finish=0x7f08000b;
         public static final int wskcss_grade=0x7f080018;
         public static final int wskcss_head_changed=0x7f080015;

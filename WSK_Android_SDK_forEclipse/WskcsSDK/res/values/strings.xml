@@ -26,10 +26,13 @@
     <string name="wskcss_head_changed">头像修改成功！</string>
     <string name="wskcss_select_img">选择图片</string>
     <string name="wskcss_resend">重新发送</string>
-    <string name="wskcss_grade">评价服务</string>
-
+    <string name="wskcss_grade">立即评价</string>
+    <string name="wskcss_copy">复制</string>
     <string-array name="wskcss_msg_send_failed_handles">
         <item>@string/wskcss_resend</item>
     </string-array>
 
+    <string-array name="wskcss_msg_copy">
+        <item>@string/wskcss_copy</item>
+    </string-array>
 </resources>

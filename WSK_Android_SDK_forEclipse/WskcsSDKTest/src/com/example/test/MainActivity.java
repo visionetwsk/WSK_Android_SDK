@@ -10,7 +10,10 @@ import com.visionet.wskcss.WskCS;
 import com.visionet.wskcss.bean.UserInfo;
 
 public class MainActivity extends Activity {
+//test
+//    public static final String APP_KEY = "dmlzaW9uZXQ6TW9iaWxlQ2hhdFRlc3Qx";
 
+    public static final String APP_KEY = "c2NjczpmZTY0NDNkZWU2ZDM5ZDdiY2U2ZDE1MmZkNDNjMTE5YQ==";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -25,7 +28,7 @@ public class MainActivity extends Activity {
         userInfo.setAddress( "上海延安西路1146号" );
         userInfo.setBirthday( "1998-03-03" );
         userInfo.setHeadimgurl( "http://avatar.csdn.net/E/8/0/1_oyangyujun.jpg" );
-        WskCS.init( this,"dmlzaW9uZXQ6TW9iaWxlQ2hhdFRlc3Qx",userInfo );
+        WskCS.init( this,APP_KEY,userInfo );
 		setContentView(R.layout.activity_main);
 	}
 
