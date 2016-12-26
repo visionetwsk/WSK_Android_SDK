@@ -107,8 +107,81 @@ public class UserInfo {
 * appKey用来区分微尚客集成客户端，在微尚客平台的 **App SDK设置** 中可以找到
 * userInfo用户信息
 
-###3.WskCs.configUi();
->微尚客SDK的UI配置，如不需要可以不调用
+### 4.registerReceiver WskCSPushBR
+> 继承接收微尚客客服消息推送的广播
+```java
+public class MyWskCSPushBR extends WskCSPushBR{
+  /**
+   * 接收到消息
+   * @param push
+   */
+  @Override
+  public void onReceiverPush(ReceivePush push) {
+    //此处可以用来弹出通知Notification，显示未读消息数量等操作
+  }
+  /**
+   * 收到离线消息集合
+   * param pushs
+   */
+  @Override
+  public void onReceiverOffLinePushs(List<ReceivePush> pushs) {
+    //此处可以用来弹出通知Notification，显示未读消息数量等操作
+  }
+}
+```
+ 
+#### a.可以通过代码注册
+
+```java
+IntentFilter filter = new IntentFilter( WskCSPushBR.ACTION_PUSH );
+filter.setPriority( 990 );//此处小于1000,当处于联系客服界面时候将不会收到广播
+registerReceiver(wskCSPushBR,filter);
+```
+ 
+#### b.AndroidManifest进行注册
+
+```xml
+<receiver android:name=".MyWskCSPushBR" >
+  <intent-filter android:priority="990"><!--此处小于1000,当处于联系客服界面时候将不会收到广播-->
+    <action android:name="com.visionet.wskcss.ACTION_MESSAGE_PUSH"></action>
+  </intent-filter>
+</receiver>
+
+```
+
+### 4. WskCS.toWSKCS();
+> 跳转至客服界面(二选一)：
+```java
+    WskCS.toWSKCS( context);
+```
+
+```java
+    /**
+     * 自动发送一个链接
+     * @param link 链接地址（跳转的url）
+     * @param linkDesc 链接描述（展示的信息）
+     */
+    WskCS.toWSKCS( context,link,linkDesc);
+```
+
+
+### 5. WskCS.stopReceiverPushService();
+> 停止接收客服消息的推送服务，注意当进入联系客服界面将服务将自动开启
+
+```java
+
+    /**
+     * 停止接收推送服务，一般在业务系统退出登录后调用
+     * @param saveOffLinePush 停止后所有消息是否保存为离线消息，离线消息在重连后会发送
+     */
+     public static void stopReceiverPushService(boolean saveOffLinePush){
+        ...
+    }
+    
+```
+ 
+###扩展功能:
+* 微尚客SDK的UI配置，如不需要可以不调用
 
 ####在初始化后调用：
 ```java
@@ -204,76 +277,17 @@ public class WskCsConfig {
     private boolean showTitleLine;
  }
 ```
-### 4.registerReceiver WskCSPushBR
-> 继承接收微尚客客服消息推送的广播
+* 监听url消息的点击事件
 ```java
-public class MyWskCSPushBR extends WskCSPushBR{
-  /**
-   * 接收到消息
-   * @param push
-   */
-  @Override
-  public void onReceiverPush(ReceivePush push) {
-    //此处可以用来弹出通知Notification，显示未读消息数量等操作
-  }
-  /**
-   * 收到离线消息集合
-   * param pushs
-   */
-  @Override
-  public void onReceiverOffLinePushs(List<ReceivePush> pushs) {
-    //此处可以用来弹出通知Notification，显示未读消息数量等操作
-  }
-}
-```
- 
-#### a.可以通过代码注册
-
-```java
-IntentFilter filter = new IntentFilter( WskCSPushBR.ACTION_PUSH );
-filter.setPriority( 990 );//此处小于1000,当处于联系客服界面时候将不会收到广播
-registerReceiver(wskCSPushBR,filter);
-```
- 
-#### b.AndroidManifest进行注册
-
-```xml
-<receiver android:name=".MyWskCSPushBR" >
-  <intent-filter android:priority="990"><!--此处小于1000,当处于联系客服界面时候将不会收到广播-->
-    <action android:name="com.visionet.wskcss.ACTION_MESSAGE_PUSH"></action>
-  </intent-filter>
-</receiver>
-
-```
-
-###5. WskCS.toWSKCS();
-> 跳转至客服界面(二选一)：
-```java
-    WskCS.toWSKCS( context);
-```
-
-```java
+    WskCS.setUrlMsgClickListener( new WskCS.UrlMsgClickListener() {
     /**
-     * 自动发送一个链接
-     * @param link 链接地址（跳转的url）
-     * @param linkDesc 链接描述（展示的信息）
-     */
-    WskCS.toWSKCS( context,link,linkDesc);
-```
-
-###6. WskCS.stopReceiverPushService();
-> 停止接收客服消息的推送服务，注意当进入联系客服界面将服务将自动开启
-
-```java
-
-    /**
-     * 停止接收推送服务，一般在业务系统退出登录后调用
-     * @param saveOffLinePush 停止后所有消息是否保存为离线消息，离线消息在重连后会发送
-     */
-     public static void stopReceiverPushService(boolean saveOffLinePush){
-        ...
-    }
-    
-```
- 
- 
+    * 链接类型的消息点击
+    * @param url 连接消息的url
+    * @return 当符合条件返回正确处理返回true,不符合条件的返回false将通过webview加载.
+    */
+    @Override
+    public boolean handlerUrlClick(String url) {
+            return false;
+          }
+    } );
+ ```
