@@ -277,7 +277,7 @@ public class WskCsConfig {
     private boolean showTitleLine;
  }
 ```
-* 监听url消息的点击事件
+* 监听url消息的点击事件，在 WskCS.toWSKCS()后调用;
 ```java
     WskCS.setUrlMsgClickListener( new WskCS.UrlMsgClickListener() {
     /**
@@ -286,8 +286,11 @@ public class WskCsConfig {
     * @return 当符合条件返回正确处理返回true,不符合条件的返回false将通过webview加载.
     */
     @Override
-    public boolean handlerUrlClick(String url) {
-            return false;
-          }
+    public boolean handlerUrlClick(Context context,String url) {
+      if(url!=null&&url.contains(?)){
+        ...
+        return true;
+      }
+      return false; 
     } );
  ```
