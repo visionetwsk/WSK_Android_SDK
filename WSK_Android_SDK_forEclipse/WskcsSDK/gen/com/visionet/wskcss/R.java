@@ -76,6 +76,7 @@ containing a value of this type.
         public static int stackFromEnd=0x7f010005;
     }
     public static final class color {
+        public static int activity_transparent=0x7f050004;
         public static int wskcs_blue=0x7f050003;
         public static int wskcs_gray=0x7f050001;
         public static int wskcs_gray_text=0x7f050002;
@@ -455,50 +456,47 @@ containing a value of this type.
         public static int g103=0x7f0300d0;
         public static int g104=0x7f0300d1;
         public static int ic_launcher=0x7f0300d2;
-        public static int wskcss__icon_back_normal=0x7f0300d3;
-        public static int wskcss_aio_face_delete=0x7f0300d4;
-        public static int wskcss_aio_face_delete_pressed=0x7f0300d5;
-        public static int wskcss_cf1=0x7f0300d6;
-        public static int wskcss_cf2=0x7f0300d7;
-        public static int wskcss_cf3=0x7f0300d8;
-        public static int wskcss_cf4=0x7f0300d9;
-        public static int wskcss_chat_bottom_keyboard=0x7f0300da;
-        public static int wskcss_chat_bottom_keyboard_press=0x7f0300db;
-        public static int wskcss_chat_bottom_record=0x7f0300dc;
-        public static int wskcss_chat_bottom_record_touch=0x7f0300dd;
-        public static int wskcss_chat_bottom_smile=0x7f0300de;
-        public static int wskcss_chat_bottom_smile_press=0x7f0300df;
-        public static int wskcss_chat_bottom_up=0x7f0300e0;
-        public static int wskcss_chat_bottom_up_press=0x7f0300e1;
-        public static int wskcss_chat_camera=0x7f0300e2;
-        public static int wskcss_chat_left_bg_nomal=0x7f0300e3;
-        public static int wskcss_chat_left_bg_pressed=0x7f0300e4;
-        public static int wskcss_chat_pic=0x7f0300e5;
-        public static int wskcss_cs1=0x7f0300e6;
-        public static int wskcss_cs2=0x7f0300e7;
-        public static int wskcss_cs3=0x7f0300e8;
-        public static int wskcss_cs4=0x7f0300e9;
-        public static int wskcss_d1=0x7f0300ea;
-        public static int wskcss_d2=0x7f0300eb;
-        public static int wskcss_icon_back_normal=0x7f0300ec;
-        public static int wskcss_icon_back_pressed=0x7f0300ed;
-        public static int wskcss_icon_user_def=0x7f0300ee;
-        public static int wskcss_icon_video=0x7f0300ef;
-        public static int wskcss_icon_voice_left=0x7f0300f0;
-        public static int wskcss_icon_voice_right=0x7f0300f1;
-        public static int wskcss_img_record_cancel=0x7f0300f2;
-        public static int wskcss_img_recording=0x7f0300f3;
-        public static int wskcss_img_reload=0x7f0300f4;
-        public static int wskcss_img_session_face=0x7f0300f5;
-        public static int wskcss_img_session_keyboard=0x7f0300f6;
-        public static int wskcss_record_volum1=0x7f0300f7;
-        public static int wskcss_record_volum2=0x7f0300f8;
-        public static int wskcss_record_volum3=0x7f0300f9;
-        public static int wskcss_record_volum4=0x7f0300fa;
-        public static int wskcss_record_volum5=0x7f0300fb;
-        public static int wskcss_record_volum6=0x7f0300fc;
-        public static int wskcss_record_volum7=0x7f0300fd;
-        public static int wskcss_record_volum8=0x7f0300fe;
+        public static int wskcss_aio_face_delete=0x7f0300d3;
+        public static int wskcss_aio_face_delete_pressed=0x7f0300d4;
+        public static int wskcss_cf1=0x7f0300d5;
+        public static int wskcss_cf2=0x7f0300d6;
+        public static int wskcss_cf3=0x7f0300d7;
+        public static int wskcss_cf4=0x7f0300d8;
+        public static int wskcss_chat_bottom_keyboard=0x7f0300d9;
+        public static int wskcss_chat_bottom_keyboard_press=0x7f0300da;
+        public static int wskcss_chat_bottom_record=0x7f0300db;
+        public static int wskcss_chat_bottom_record_touch=0x7f0300dc;
+        public static int wskcss_chat_bottom_smile=0x7f0300dd;
+        public static int wskcss_chat_bottom_smile_press=0x7f0300de;
+        public static int wskcss_chat_bottom_up=0x7f0300df;
+        public static int wskcss_chat_bottom_up_press=0x7f0300e0;
+        public static int wskcss_chat_camera=0x7f0300e1;
+        public static int wskcss_chat_pic=0x7f0300e2;
+        public static int wskcss_cs1=0x7f0300e3;
+        public static int wskcss_cs2=0x7f0300e4;
+        public static int wskcss_cs3=0x7f0300e5;
+        public static int wskcss_cs4=0x7f0300e6;
+        public static int wskcss_d1=0x7f0300e7;
+        public static int wskcss_d2=0x7f0300e8;
+        public static int wskcss_icon_back_normal=0x7f0300e9;
+        public static int wskcss_icon_back_pressed=0x7f0300ea;
+        public static int wskcss_icon_user_def=0x7f0300eb;
+        public static int wskcss_icon_video=0x7f0300ec;
+        public static int wskcss_icon_voice_left=0x7f0300ed;
+        public static int wskcss_icon_voice_right=0x7f0300ee;
+        public static int wskcss_img_record_cancel=0x7f0300ef;
+        public static int wskcss_img_recording=0x7f0300f0;
+        public static int wskcss_img_reload=0x7f0300f1;
+        public static int wskcss_img_session_face=0x7f0300f2;
+        public static int wskcss_img_session_keyboard=0x7f0300f3;
+        public static int wskcss_record_volum1=0x7f0300f4;
+        public static int wskcss_record_volum2=0x7f0300f5;
+        public static int wskcss_record_volum3=0x7f0300f6;
+        public static int wskcss_record_volum4=0x7f0300f7;
+        public static int wskcss_record_volum5=0x7f0300f8;
+        public static int wskcss_record_volum6=0x7f0300f9;
+        public static int wskcss_record_volum7=0x7f0300fa;
+        public static int wskcss_record_volum8=0x7f0300fb;
     }
     public static final class string {
         public static int wskcss_action_done=0x7f08000f;
@@ -531,7 +529,8 @@ containing a value of this type.
         public static int wskcss_under_time=0x7f080007;
     }
     public static final class style {
-        public static int like_toast_dialog_style=0x7f0a0000;
+        public static int TransparentTheme=0x7f0a0000;
+        public static int like_toast_dialog_style=0x7f0a0001;
     }
     public static final class styleable {
         /** Attributes that can be used with a RecyclerView.

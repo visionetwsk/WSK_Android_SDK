@@ -1,6 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-
-
+    <color name="activity_transparent">#01000000</color>
+    <style name="TransparentTheme">
+        <item name="android:windowBackground">@color/activity_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
     <style name="like_toast_dialog_style">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>

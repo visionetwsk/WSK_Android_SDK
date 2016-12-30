@@ -98,6 +98,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="#362E2C"
                 android:textColorLink="#0000ff"
+                android:autoLink="all"
                 android:textSize="@dimen/text_14"/>
         </LinearLayout>
 
@@ -201,6 +202,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
                 android:textColorLink="#0000ff"
+                android:autoLink="all"
                 android:textSize="@dimen/text_14"/>
 
         </LinearLayout>
