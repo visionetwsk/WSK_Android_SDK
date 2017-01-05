@@ -60,8 +60,8 @@
             android:layout_height="40dp"
             android:layout_marginRight="5dp"
             android:src="@mipmap/wskcss_icon_user_def"
-            app:roundHeight="20dp"
-            app:roundWidth="20dp"/>
+            app:wskcssRoundHeight="20dp"
+            app:wskcssRoundWidth="20dp"/>
 
         <LinearLayout android:id="@+id/ll_left_content"
             android:layout_width="wrap_content"
@@ -213,8 +213,8 @@
             android:layout_height="40dp"
             android:layout_marginLeft="5dp"
             android:src="@mipmap/wskcss_icon_user_def"
-            app:roundHeight="20dp"
-            app:roundWidth="20dp"/>
+            app:wskcssRoundHeight="20dp"
+            app:wskcssRoundWidth="20dp"/>
 
         <TextView
             android:id="@+id/tv_right_time"
