@@ -14,10 +14,10 @@ public final class R {
 	public static final class attr {
 		public static final int layoutManager = 0x7f010002;
 		public static final int reverseLayout = 0x7f010004;
-		public static final int roundHeight = 0x7f010001;
-		public static final int roundWidth = 0x7f010000;
 		public static final int spanCount = 0x7f010003;
 		public static final int stackFromEnd = 0x7f010005;
+		public static final int wskcssRoundHeight = 0x7f010001;
+		public static final int wskcssRoundWidth = 0x7f010000;
 	}
 	public static final class color {
 		public static final int activity_transparent = 0x7f050004;
@@ -468,7 +468,7 @@ public final class R {
 		public static final int RecyclerView_spanCount = 2;
 		public static final int RecyclerView_stackFromEnd = 4;
 		public static final int[] RoundAngleImageView = { 0x7f010000, 0x7f010001 };
-		public static final int RoundAngleImageView_roundHeight = 1;
-		public static final int RoundAngleImageView_roundWidth = 0;
+		public static final int RoundAngleImageView_wskcssRoundHeight = 1;
+		public static final int RoundAngleImageView_wskcssRoundWidth = 0;
 	}
 }

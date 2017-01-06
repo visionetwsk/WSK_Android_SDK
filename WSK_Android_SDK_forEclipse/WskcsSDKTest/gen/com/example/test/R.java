@@ -38,26 +38,6 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int reverseLayout=0x7f010004;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int roundHeight=0x7f010001;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int roundWidth=0x7f010000;
         /** <p>Must be an integer value, such as "<code>100</code>".
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -74,6 +54,26 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int stackFromEnd=0x7f010005;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int wskcssRoundHeight=0x7f010001;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int wskcssRoundWidth=0x7f010000;
     }
     public static final class color {
         public static final int activity_transparent=0x7f050004;
@@ -675,17 +675,17 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #RoundAngleImageView_roundHeight com.example.test:roundHeight}</code></td><td></td></tr>
-           <tr><td><code>{@link #RoundAngleImageView_roundWidth com.example.test:roundWidth}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundAngleImageView_wskcssRoundHeight com.example.test:wskcssRoundHeight}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundAngleImageView_wskcssRoundWidth com.example.test:wskcssRoundWidth}</code></td><td></td></tr>
            </table>
-           @see #RoundAngleImageView_roundHeight
-           @see #RoundAngleImageView_roundWidth
+           @see #RoundAngleImageView_wskcssRoundHeight
+           @see #RoundAngleImageView_wskcssRoundWidth
          */
         public static final int[] RoundAngleImageView = {
             0x7f010000, 0x7f010001
         };
         /**
-          <p>This symbol is the offset where the {@link com.example.test.R.attr#roundHeight}
+          <p>This symbol is the offset where the {@link com.example.test.R.attr#wskcssRoundHeight}
           attribute's value can be found in the {@link #RoundAngleImageView} array.
 
 
@@ -697,11 +697,11 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.test:roundHeight
+          @attr name com.example.test:wskcssRoundHeight
         */
-        public static final int RoundAngleImageView_roundHeight = 1;
+        public static final int RoundAngleImageView_wskcssRoundHeight = 1;
         /**
-          <p>This symbol is the offset where the {@link com.example.test.R.attr#roundWidth}
+          <p>This symbol is the offset where the {@link com.example.test.R.attr#wskcssRoundWidth}
           attribute's value can be found in the {@link #RoundAngleImageView} array.
 
 
@@ -713,8 +713,8 @@ in (inches), mm (millimeters).
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.example.test:roundWidth
+          @attr name com.example.test:wskcssRoundWidth
         */
-        public static final int RoundAngleImageView_roundWidth = 0;
+        public static final int RoundAngleImageView_wskcssRoundWidth = 0;
     };
 }
