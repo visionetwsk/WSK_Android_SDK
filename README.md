@@ -116,7 +116,7 @@ public class MyWskCSPushBR extends WskCSPushBR{
    * @param push
    */
   @Override
-  public void onReceiverPush(ReceivePush push) {
+  public void onReceiverPush(Context context,ReceivePush push) {
     //此处可以用来弹出通知Notification，显示未读消息数量等操作
   }
   /**
@@ -124,7 +124,7 @@ public class MyWskCSPushBR extends WskCSPushBR{
    * param pushs
    */
   @Override
-  public void onReceiverOffLinePushs(List<ReceivePush> pushs) {
+  public void onReceiverOffLinePushs(Context context,List<ReceivePush> pushs) {
     //此处可以用来弹出通知Notification，显示未读消息数量等操作
   }
 }
