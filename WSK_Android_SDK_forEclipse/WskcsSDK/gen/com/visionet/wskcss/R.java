@@ -123,126 +123,134 @@ containing a value of this type.
         public static int wskcss_chat_right_bg=0x7f02000a;
         public static int wskcss_chat_right_bg_nomal=0x7f02000b;
         public static int wskcss_chat_right_bg_pressed=0x7f02000c;
-        public static int wskcss_default_check=0x7f02000d;
-        public static int wskcss_default_error=0x7f02000e;
-        public static int wskcss_default_text_color=0x7f02000f;
-        public static int wskcss_folder_text_color=0x7f020010;
-        public static int wskcss_ic_info_black_24dp=0x7f020011;
-        public static int wskcss_ic_notifications_black_24dp=0x7f020012;
-        public static int wskcss_ic_sync_black_24dp=0x7f020013;
-        public static int wskcss_icon_failed=0x7f020014;
-        public static int wskcss_img_def=0x7f020015;
-        public static int wskcss_iv_face=0x7f020016;
-        public static int wskcss_iv_face_pressed=0x7f020017;
-        public static int wskcss_left_voice_anim=0x7f020018;
-        public static int wskcss_progress_background=0x7f020019;
-        public static int wskcss_progress_horizontal_img=0x7f02001a;
-        public static int wskcss_progress_normal=0x7f02001b;
-        public static int wskcss_right_voice_anim=0x7f02001c;
-        public static int wskcss_round_background=0x7f02001d;
-        public static int wskcss_selector_bt_back=0x7f02001e;
-        public static int wskcss_selector_chat_face_bt=0x7f02001f;
-        public static int wskcss_selector_chat_face_del_bt=0x7f020020;
-        public static int wskcss_selector_chat_keybord_bt=0x7f020021;
-        public static int wskcss_selector_chat_up_bt=0x7f020022;
-        public static int wskcss_shape_corner_all_gray=0x7f020023;
-        public static int wskcss_shape_corner_all_touch_frame=0x7f020024;
-        public static int wskcss_shape_corner_all_white_frame=0x7f020025;
-        public static int wskcss_text_indicator=0x7f020026;
+        public static int wskcss_chat_right_news_bg=0x7f02000d;
+        public static int wskcss_chat_right_news_bg_nomal=0x7f02000e;
+        public static int wskcss_chat_right_news_bg_pressed=0x7f02000f;
+        public static int wskcss_default_check=0x7f020010;
+        public static int wskcss_default_error=0x7f020011;
+        public static int wskcss_default_text_color=0x7f020012;
+        public static int wskcss_folder_text_color=0x7f020013;
+        public static int wskcss_ic_info_black_24dp=0x7f020014;
+        public static int wskcss_ic_notifications_black_24dp=0x7f020015;
+        public static int wskcss_ic_sync_black_24dp=0x7f020016;
+        public static int wskcss_icon_failed=0x7f020017;
+        public static int wskcss_img_def=0x7f020018;
+        public static int wskcss_iv_face=0x7f020019;
+        public static int wskcss_iv_face_pressed=0x7f02001a;
+        public static int wskcss_left_voice_anim=0x7f02001b;
+        public static int wskcss_progress_background=0x7f02001c;
+        public static int wskcss_progress_horizontal_img=0x7f02001d;
+        public static int wskcss_progress_normal=0x7f02001e;
+        public static int wskcss_right_voice_anim=0x7f02001f;
+        public static int wskcss_round_background=0x7f020020;
+        public static int wskcss_selector_bt_back=0x7f020021;
+        public static int wskcss_selector_chat_face_bt=0x7f020022;
+        public static int wskcss_selector_chat_face_del_bt=0x7f020023;
+        public static int wskcss_selector_chat_keybord_bt=0x7f020024;
+        public static int wskcss_selector_chat_up_bt=0x7f020025;
+        public static int wskcss_shape_corner_all_gray=0x7f020026;
+        public static int wskcss_shape_corner_all_touch_frame=0x7f020027;
+        public static int wskcss_shape_corner_all_white_frame=0x7f020028;
+        public static int wskcss_text_indicator=0x7f020029;
     }
     public static final class id {
-        public static int FaceRelativeLayout=0x7f07000c;
-        public static int bt_face=0x7f070011;
-        public static int bt_more=0x7f070012;
-        public static int bt_record_input=0x7f07000e;
-        public static int category_btn=0x7f07001c;
-        public static int chat_send_btn=0x7f070013;
-        public static int checkmark=0x7f070042;
-        public static int cover=0x7f07003c;
-        public static int et_msg=0x7f07000f;
-        public static int fl_content=0x7f070007;
-        public static int footer=0x7f07001b;
-        public static int frl=0x7f07000b;
-        public static int grid=0x7f07001a;
-        public static int image=0x7f07001e;
-        public static int image_grid=0x7f070004;
-        public static int indicator=0x7f07003d;
-        public static int item_iv_face=0x7f070022;
+        public static int FaceRelativeLayout=0x7f07000f;
+        public static int bt_face=0x7f070014;
+        public static int bt_more=0x7f070015;
+        public static int bt_record_input=0x7f070011;
+        public static int category_btn=0x7f07001f;
+        public static int chat_send_btn=0x7f070016;
+        public static int checkmark=0x7f070047;
+        public static int cover=0x7f070041;
+        public static int et_msg=0x7f070012;
+        public static int fl_content=0x7f07000a;
+        public static int footer=0x7f07001e;
+        public static int frl=0x7f07000e;
+        public static int grid=0x7f07001d;
+        public static int image=0x7f070021;
+        public static int image_grid=0x7f070007;
+        public static int indicator=0x7f070042;
+        public static int item_iv_face=0x7f070025;
         /**  ItemTouchHelper uses this id to save a View's original elevation. 
          */
         public static int item_touch_helper_previous_elevation=0x7f070000;
-        public static int iv_back=0x7f070043;
-        public static int iv_camera=0x7f070015;
-        public static int iv_left=0x7f070028;
-        public static int iv_left_user=0x7f070026;
-        public static int iv_left_video=0x7f07002a;
-        public static int iv_left_voice=0x7f070029;
-        public static int iv_pic=0x7f070016;
-        public static int iv_record_main=0x7f070039;
-        public static int iv_record_volume=0x7f07003a;
-        public static int iv_reload=0x7f070021;
-        public static int iv_right=0x7f070033;
-        public static int iv_right_failed=0x7f07002f;
-        public static int iv_right_user=0x7f070037;
-        public static int iv_right_video=0x7f070035;
-        public static int iv_right_voice=0x7f070034;
-        public static int ll_content=0x7f070003;
-        public static int ll_face=0x7f070017;
-        public static int ll_left=0x7f070025;
-        public static int ll_left_content=0x7f070027;
-        public static int ll_more=0x7f070014;
-        public static int ll_msgs=0x7f070008;
-        public static int ll_point=0x7f070019;
-        public static int ll_right=0x7f07002e;
-        public static int ll_right_content=0x7f070032;
-        public static int mask=0x7f070041;
-        public static int name=0x7f07003e;
-        public static int pager=0x7f070005;
-        public static int path=0x7f07003f;
-        public static int pb_right_sending=0x7f070030;
-        public static int preview=0x7f07001d;
-        public static int progress_bar=0x7f070020;
-        public static int rb_record=0x7f070010;
-        public static int rl_input=0x7f07000d;
-        public static int rv_messages=0x7f07000a;
-        public static int size=0x7f070040;
-        public static int srl_load=0x7f070009;
-        public static int tv_count=0x7f070006;
-        public static int tv_date=0x7f070023;
-        public static int tv_left_content=0x7f07002b;
-        public static int tv_left_duration=0x7f07002c;
-        public static int tv_left_time=0x7f07002d;
-        public static int tv_notice=0x7f070024;
-        public static int tv_recording_msg=0x7f07003b;
-        public static int tv_remark=0x7f07001f;
-        public static int tv_right_content=0x7f070036;
-        public static int tv_right_duration=0x7f070031;
-        public static int tv_right_time=0x7f070038;
-        public static int tv_title=0x7f070044;
-        public static int tv_title_right=0x7f070045;
-        public static int v_title_bar=0x7f070001;
-        public static int v_title_line=0x7f070002;
-        public static int vp_face=0x7f070018;
-        public static int webView=0x7f070046;
+        public static int iv_back=0x7f070048;
+        public static int iv_camera=0x7f070018;
+        public static int iv_img=0x7f070003;
+        public static int iv_left=0x7f07002c;
+        public static int iv_left_user=0x7f070029;
+        public static int iv_left_video=0x7f07002e;
+        public static int iv_left_voice=0x7f07002d;
+        public static int iv_pic=0x7f070019;
+        public static int iv_record_main=0x7f07003e;
+        public static int iv_record_volume=0x7f07003f;
+        public static int iv_reload=0x7f070024;
+        public static int iv_right=0x7f070038;
+        public static int iv_right_failed=0x7f070033;
+        public static int iv_right_user=0x7f07003c;
+        public static int iv_right_video=0x7f07003a;
+        public static int iv_right_voice=0x7f070039;
+        public static int ll_content=0x7f070006;
+        public static int ll_face=0x7f07001a;
+        public static int ll_left=0x7f070028;
+        public static int ll_left_content=0x7f07002a;
+        public static int ll_more=0x7f070017;
+        public static int ll_msgs=0x7f07000b;
+        public static int ll_point=0x7f07001c;
+        public static int ll_right=0x7f070032;
+        public static int ll_right_content=0x7f070036;
+        public static int mask=0x7f070046;
+        public static int name=0x7f070043;
+        public static int pager=0x7f070008;
+        public static int path=0x7f070044;
+        public static int pb_right_sending=0x7f070034;
+        public static int preview=0x7f070020;
+        public static int progress_bar=0x7f070023;
+        public static int rb_record=0x7f070013;
+        public static int rl_input=0x7f070010;
+        public static int rv_messages=0x7f07000d;
+        public static int size=0x7f070045;
+        public static int srl_load=0x7f07000c;
+        public static int tv_content=0x7f070002;
+        public static int tv_count=0x7f070009;
+        public static int tv_date=0x7f070026;
+        public static int tv_left_content=0x7f07002f;
+        public static int tv_left_duration=0x7f070030;
+        public static int tv_left_time=0x7f070031;
+        public static int tv_notice=0x7f070027;
+        public static int tv_recording_msg=0x7f070040;
+        public static int tv_remark=0x7f070022;
+        public static int tv_right_content=0x7f07003b;
+        public static int tv_right_duration=0x7f070035;
+        public static int tv_right_time=0x7f07003d;
+        public static int tv_title=0x7f070001;
+        public static int tv_title_right=0x7f070049;
+        public static int v_left_news=0x7f07002b;
+        public static int v_right_news=0x7f070037;
+        public static int v_title_bar=0x7f070004;
+        public static int v_title_line=0x7f070005;
+        public static int vp_face=0x7f07001b;
+        public static int webView=0x7f07004a;
     }
     public static final class layout {
-        public static int wskcss_activity_base=0x7f040000;
-        public static int wskcss_activity_multiimageselector=0x7f040001;
-        public static int wskcss_activity_show_img=0x7f040002;
-        public static int wskcss_activity_web=0x7f040003;
-        public static int wskcss_activity_wsk_cs=0x7f040004;
-        public static int wskcss_content_base=0x7f040005;
-        public static int wskcss_custom_facerelativelayout=0x7f040006;
-        public static int wskcss_fragment_multi_image=0x7f040007;
-        public static int wskcss_image_detail_fragment=0x7f040008;
-        public static int wskcss_item_face=0x7f040009;
-        public static int wskcss_item_message=0x7f04000a;
-        public static int wskcss_layout_record_dialog=0x7f04000b;
-        public static int wskcss_list_item_camera=0x7f04000c;
-        public static int wskcss_list_item_folder=0x7f04000d;
-        public static int wskcss_list_item_image=0x7f04000e;
-        public static int wskcss_toolbar=0x7f04000f;
-        public static int wskcss_web=0x7f040010;
+        public static int item_message_news=0x7f040000;
+        public static int wskcss_activity_base=0x7f040001;
+        public static int wskcss_activity_multiimageselector=0x7f040002;
+        public static int wskcss_activity_show_img=0x7f040003;
+        public static int wskcss_activity_web=0x7f040004;
+        public static int wskcss_activity_wsk_cs=0x7f040005;
+        public static int wskcss_content_base=0x7f040006;
+        public static int wskcss_custom_facerelativelayout=0x7f040007;
+        public static int wskcss_fragment_multi_image=0x7f040008;
+        public static int wskcss_image_detail_fragment=0x7f040009;
+        public static int wskcss_item_face=0x7f04000a;
+        public static int wskcss_item_message=0x7f04000b;
+        public static int wskcss_layout_record_dialog=0x7f04000c;
+        public static int wskcss_list_item_camera=0x7f04000d;
+        public static int wskcss_list_item_folder=0x7f04000e;
+        public static int wskcss_list_item_image=0x7f04000f;
+        public static int wskcss_toolbar=0x7f040010;
+        public static int wskcss_web=0x7f040011;
     }
     public static final class mipmap {
         public static int e0=0x7f030000;
@@ -560,7 +568,7 @@ containing a value of this type.
           attribute's value can be found in the {@link #RecyclerView} array.
           @attr name android:orientation
         */
-        public static final int RecyclerView_android_orientation = 0;
+        public static int RecyclerView_android_orientation = 0;
         /**
           <p>
           @attr description
@@ -584,7 +592,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.visionet.wskcss:layoutManager
         */
-        public static final int RecyclerView_layoutManager = 1;
+        public static int RecyclerView_layoutManager = 1;
         /**
           <p>This symbol is the offset where the {@link com.visionet.wskcss.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
@@ -598,7 +606,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.visionet.wskcss:reverseLayout
         */
-        public static final int RecyclerView_reverseLayout = 3;
+        public static int RecyclerView_reverseLayout = 3;
         /**
           <p>This symbol is the offset where the {@link com.visionet.wskcss.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
@@ -612,7 +620,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.visionet.wskcss:spanCount
         */
-        public static final int RecyclerView_spanCount = 2;
+        public static int RecyclerView_spanCount = 2;
         /**
           <p>This symbol is the offset where the {@link com.visionet.wskcss.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
@@ -626,7 +634,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.visionet.wskcss:stackFromEnd
         */
-        public static final int RecyclerView_stackFromEnd = 4;
+        public static int RecyclerView_stackFromEnd = 4;
         /** Attributes that can be used with a RoundAngleImageView.
            <p>Includes the following attributes:</p>
            <table>
@@ -657,7 +665,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.visionet.wskcss:wskcssRoundHeight
         */
-        public static final int RoundAngleImageView_wskcssRoundHeight = 1;
+        public static int RoundAngleImageView_wskcssRoundHeight = 1;
         /**
           <p>This symbol is the offset where the {@link com.visionet.wskcss.R.attr#wskcssRoundWidth}
           attribute's value can be found in the {@link #RoundAngleImageView} array.
@@ -673,6 +681,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.visionet.wskcss:wskcssRoundWidth
         */
-        public static final int RoundAngleImageView_wskcssRoundWidth = 0;
+        public static int RoundAngleImageView_wskcssRoundWidth = 0;
     };
 }

@@ -38,6 +38,6 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	public void toWskcss(View view){
-		WskCS.toWSKCS(this,"http://baidu.com","百度测试一下看看");
+		WskCS.toWSKCS(this,"http://baidu.com","百度测试一下看看" ,"content","http://avatar.csdn.net/E/8/0/1_oyangyujun.jpg");
 	}
 }

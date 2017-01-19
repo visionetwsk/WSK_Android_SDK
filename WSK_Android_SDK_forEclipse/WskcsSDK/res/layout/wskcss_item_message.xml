@@ -68,7 +68,9 @@
             android:layout_height="wrap_content"
             android:background="@drawable/wskcss_chat_left_bg"
             android:orientation="horizontal">
-
+            <include android:id="@+id/v_left_news"
+                     layout="@layout/item_message_news"
+                />
             <ImageView
                 android:id="@+id/iv_left"
                 android:layout_width="wrap_content"
@@ -173,7 +175,9 @@
             android:background="@drawable/wskcss_chat_right_bg"
             android:gravity="center_vertical"
             android:orientation="horizontal">
-
+            <include android:id="@+id/v_right_news"
+                     layout="@layout/item_message_news"
+                />
             <ImageView
                 android:id="@+id/iv_right"
                 android:layout_width="wrap_content"
