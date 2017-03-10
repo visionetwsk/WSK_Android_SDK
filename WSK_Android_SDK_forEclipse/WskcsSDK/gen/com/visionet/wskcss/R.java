@@ -568,7 +568,7 @@ containing a value of this type.
           attribute's value can be found in the {@link #RecyclerView} array.
           @attr name android:orientation
         */
-        public static int RecyclerView_android_orientation = 0;
+        public static final int RecyclerView_android_orientation = 0;
         /**
           <p>
           @attr description
@@ -592,7 +592,7 @@ containing a value of this type.
           <p>This is a private symbol.
           @attr name com.visionet.wskcss:layoutManager
         */
-        public static int RecyclerView_layoutManager = 1;
+        public static final int RecyclerView_layoutManager = 1;
         /**
           <p>This symbol is the offset where the {@link com.visionet.wskcss.R.attr#reverseLayout}
           attribute's value can be found in the {@link #RecyclerView} array.
@@ -606,7 +606,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.visionet.wskcss:reverseLayout
         */
-        public static int RecyclerView_reverseLayout = 3;
+        public static final int RecyclerView_reverseLayout = 3;
         /**
           <p>This symbol is the offset where the {@link com.visionet.wskcss.R.attr#spanCount}
           attribute's value can be found in the {@link #RecyclerView} array.
@@ -620,7 +620,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.visionet.wskcss:spanCount
         */
-        public static int RecyclerView_spanCount = 2;
+        public static final int RecyclerView_spanCount = 2;
         /**
           <p>This symbol is the offset where the {@link com.visionet.wskcss.R.attr#stackFromEnd}
           attribute's value can be found in the {@link #RecyclerView} array.
@@ -634,7 +634,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.visionet.wskcss:stackFromEnd
         */
-        public static int RecyclerView_stackFromEnd = 4;
+        public static final int RecyclerView_stackFromEnd = 4;
         /** Attributes that can be used with a RoundAngleImageView.
            <p>Includes the following attributes:</p>
            <table>
@@ -665,7 +665,7 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.visionet.wskcss:wskcssRoundHeight
         */
-        public static int RoundAngleImageView_wskcssRoundHeight = 1;
+        public static final int RoundAngleImageView_wskcssRoundHeight = 1;
         /**
           <p>This symbol is the offset where the {@link com.visionet.wskcss.R.attr#wskcssRoundWidth}
           attribute's value can be found in the {@link #RoundAngleImageView} array.
@@ -681,6 +681,6 @@ theme attribute (in the form
 containing a value of this type.
           @attr name com.visionet.wskcss:wskcssRoundWidth
         */
-        public static int RoundAngleImageView_wskcssRoundWidth = 0;
+        public static final int RoundAngleImageView_wskcssRoundWidth = 0;
     };
 }
