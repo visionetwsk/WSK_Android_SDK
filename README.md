@@ -1,13 +1,13 @@
 # 微上客 Android SDK
 
-##简介
+## 简介
 
 >微尚客 Android SDK 是一个 Android 端客服系统访客解决方案，既包含了客服聊天逻辑管理，也提供了聊天界面，开发者可方便的将客服功能集成到自己的 APP 中。
 
-##快速集成
-###1.添加 SDK 到项目中。
+## 快速集成
+### 1.添加 SDK 到项目中。
 
-####Android Studio: 
+#### Android Studio: 
 
 > 在工程 build.gradle 文件中添加依赖：
 
@@ -18,29 +18,29 @@ compile 'com.visionet:wskcss:1.0.2'
 > 请将1.0.2替换为此徽章后面的版本号<a href='https://bintray.com/visionetwsk/wskcss/wsk_sdk/_latestVersion'><img src='https://api.bintray.com/packages/visionetwsk/wskcss/wsk_sdk/images/download.svg'></a>
 
 
-####Eclipse: 
+#### Eclipse: 
 
 >先下载 WSK_Android_SDK_forEclipse，然后解压缩，将得到的 WskSDK 文件夹作为库工程模块导入到你的工程中，并添加模块依赖。然后将 AndroidManifest 文件中的内容拷贝到你的主工程的 manifest 文件中，将 assets 文件夹的内容拷贝你的主工程的 assets 目录中。
 
-###2.WskCs.init();
+### 2.WskCs.init();
 >微尚客SDK初始化
 
 >根据需求可选(三选一)：
-####a.在你的 Application 类的 onCreate 函数中调用：
+#### a.在你的 Application 类的 onCreate 函数中调用：
 ```java
   WskCs.init(context,appKey);
 ```
-####b.在你的业务系统登录后调用：
+#### b.在你的业务系统登录后调用：
 ```java
   WskCs.init(context,userId,nickName,appKey);
 ```
-####c.在你的业务系统登录后调用：
+#### c.在你的业务系统登录后调用：
 ```java
   UserInfo userInfo = new UserInfo(userId);
   WskCS.init( context,appkey,userInfo );
   WskCs.init(context,appKey,userInfo);
 ```
-#####可配置项：
+##### 可配置项：
 
 ```java
 public class UserInfo {
@@ -180,15 +180,15 @@ registerReceiver(wskCSPushBR,filter);
     
 ```
  
-###扩展功能:
+### 扩展功能:
 * 微尚客SDK的UI配置，如不需要可以不调用
 
-####在初始化后调用：
+#### 在初始化后调用：
 ```java
   WskCsConfig config = new WskCsConfig();
   WskCs.configUi(config);
 ```
-####可配置项：
+#### 可配置项：
 ```java
 
 public class WskCsConfig {
