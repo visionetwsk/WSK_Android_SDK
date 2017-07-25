@@ -2,7 +2,7 @@
 
 ## 简介
 
->微尚客 Android SDK 是一个 Android 端客服系统访客解决方案，既包含了客服聊天逻辑管理，也提供了聊天界面，开发者可方便的将客服功能集成到自己的 APP 中。
+>微上客 Android SDK 是一个 Android 端客服系统访客解决方案，既包含了客服聊天逻辑管理，也提供了聊天界面，开发者可方便的将客服功能集成到自己的 APP 中。
 
 ## 快速集成
 ### 1.添加 SDK 到项目中。
@@ -23,7 +23,7 @@ compile 'com.visionet:wskcss:1.0.2'
 >先下载 WSK_Android_SDK_forEclipse，然后解压缩，将得到的 WskSDK 文件夹作为库工程模块导入到你的工程中，并添加模块依赖。然后将 AndroidManifest 文件中的内容拷贝到你的主工程的 manifest 文件中，将 assets 文件夹的内容拷贝你的主工程的 assets 目录中。
 
 ### 2.WskCs.init();
->微尚客SDK初始化
+>微上客SDK初始化
 
 >根据需求可选(三选一)：
 #### a.在你的 Application 类的 onCreate 函数中调用：
@@ -104,11 +104,11 @@ public class UserInfo {
 
 * userId为你的业务系统中的的唯一标示，可以用id，账号等，用来保证不同手机客户端的与客服交流的数据同步
 * nickName为你的业务平台系统中的用户名，用来在客服平台展示访客的名称
-* appKey用来区分微尚客集成客户端，在微尚客平台的 **App SDK设置** 中可以找到
+* appKey用来区分微上客集成客户端，在微上客平台的 **App SDK设置** 中可以找到
 * userInfo用户信息
 
 ### 4.registerReceiver WskCSPushBR
-> 继承接收微尚客客服消息推送的广播
+> 继承接收微上客客服消息推送的广播
 ```java
 public class MyWskCSPushBR extends WskCSPushBR{
   /**
@@ -181,7 +181,7 @@ registerReceiver(wskCSPushBR,filter);
 ```
  
 ### 扩展功能:
-* 微尚客SDK的UI配置，如不需要可以不调用
+* 微上客SDK的UI配置，如不需要可以不调用
 
 #### 在初始化后调用：
 ```java
